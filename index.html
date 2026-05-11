@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HealthBridge | Connecting Uganda to Healthcare</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600;700&display=swap" rel=""stylesheet">
 </head>
 <body>
 
     <header>
-        <a href="index.html" class="logo-container">
-            <img src="images/logo.png" alt="HealthBridge Logo: A stylized green heart with a cross,connecting a blue bridge" class="main-logo">
-        </a>
-
-            <ul class="nav-links">
+    <div class="container nav-container">
+    <div class="logo">Health<span>Bridge</span></div>
+         <nav>
+            <ul>
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="pharmacies.html">Pharmacies</a></li>
                 <li><a href="emergency.html">Emergency</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -24,33 +26,104 @@
 
     <main>
         <section class="hero">
-            <h1>Your Bridge to Better Health</h1>
+            <div class="container hero-content">
+               
+                <div class="hero-text">
+            <h1>Your Bridge to Better <span>Health</span></h1>
             <p>Locate verified pharmacies and emergency services across Uganda in seconds.</p>
-            <div class="cta-buttons">
-                <a href="pharmacies.html" class="btn-primary">Find a Pharmacy</a>
-                <a href="emergency.html" class="btn-secondary">Emergency Help</a>
+            <div class="hero-buttons">
+                <a href="#" class="btn">Find a Pharmacy</a>
+                <a href="#" class="btn-outline">Emergency Help</a>
             </div>
         </section>
 
-        <section class="features">
-            <div class="feature-card">
-                <h3>Quick Search</h3>
-                <p>Find pharmacies by division, from Kampala Central to Mbarara.</p>
+        <section class="search-section">
+            <div class="container">
+                <div class="search-box">
+            <input type="text" placeholder="search by pharmacy name"
+            
+            <select>
+                <option> Select Division</option>
+                <option>Kampala</option>
+                <option>Gulu</option>
+                <option>Mbarara</option>
+                <option>Jinja</option>
+            </select>
+
+                <button>Search</button>
             </div>
-            <div class="feature-card">
-                <h3>Verified Info</h3>
-                <p>Real-time opening hours and direct contact details.</p>
-            </div>
-            <div class="feature-card">
-                <h3>24/7 Access</h3>
-                <p>Instant access to night-shift chemists and ambulance lines.</p>
             </div>
         </section>
-    </main>
 
-    <footer>
-        <p>&copy; 2026 HealthBridge Uganda. Designed for CU Web Dev Exam.</p>
-    </footer>
+            <section class="features">
+      </div>
+
+      <div class="card">
+        <div class="icon">🚑</div>
+        <h3>24/7 Emergency Access</h3>
+        <p>Access emergency support and ambulance services.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="container stats-grid">
+
+    <div>
+      <h2>1,200+</h2>
+      <p>Pharmacies Listed</p>
+    </div>
+
+    <div>
+      <h2>120+</h2>
+      <p>Divisions Covered</p>
+    </div>
+
+    <div>
+      <h2>24/7</h2>
+      <p>Emergency Support</p>
+    </div>
+
+    <div>
+      <h2>10,000+</h2>
+      <p>Users Trust Us</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-grid">
+
+    <div>
+      <h3>HealthBridge</h3>
+      <p>Connecting Uganda to trusted healthcare services.</p>
+    </div>
+
+    <div>
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="pharmacies.html">Pharmacies</a>
+      <a href="emergency.html">Emergency</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div>
+      <h3>Contact</h3>
+      <p>+256 700 123 456</p>
+      <p>info@healthbridge.ug</p>
+      <p>Kampala, Uganda</p>
+    </div>
+
+  </div>
+
+  <div class="copyright">
+    © 2026 HealthBridge Uganda. All rights reserved.
+  </div>
+</footer>
 
 </body>
 </html>
