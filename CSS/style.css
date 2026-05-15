@@ -682,37 +682,94 @@ footer img {
 /* =========================================================
    RESPONSIVE DESIGN
 ========================================================= */
-
-@media(max-width:768px){
-
-  /* HERO TITLE */
-
-  .hero-text h1{
-    font-size:40px;
+@media (max-width: 768px) {
+  header {
+    height: auto;
+    padding: 15px 0;
   }
 
-  /* SEARCH BOX */
-
-  .search-box{
-    flex-direction:column;
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
   }
 
-  /* NAVIGATION */
-
-  nav ul{
-    display:none;
+  .logo {
+    margin-bottom: 5px;
   }
 
-  /* HERO BUTTONS */
-
-  .hero-buttons{
-    flex-direction:column;
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
   }
 
-  /* PAGE HEADER */
-
-  .page-header h1{
-    font-size:35px;
+  nav ul li a {
+    color: #052e16; 
+    font-size: 16px;
+    font-weight: 600;
   }
 
+  .search-box {
+    flex-direction: column;
+    width: 90%;
+    margin: 20px auto 0;
+  }
+
+  .search-box input, 
+  .search-box select, 
+  .search-box button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .container, .nav-container, .footer-container, .features-container {
+    width: 95%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .stats-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .stats-item {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #eee;
+    padding: 20px 0;
+    margin: 0;
+    height: auto;
+    justify-content: center;
+  }
+
+  .site-footer, .footer-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
 }
