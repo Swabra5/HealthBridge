@@ -666,6 +666,252 @@ footer img {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
 }
 
+/* --- Map Styling --- */
+
+.map-section {
+  padding: 40px 0;
+  background-color: #fdfdfd;
+}
+
+.map-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.map-wrapper {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.map-wrapper iframe {
+  display: block;
+}
+ 
+.emergency-content {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.emergency-section {
+  margin-bottom: 50px;
+}
+
+.emergency-section h2 {
+  font-size: 22px;
+  color: #111827;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.emergency-alert-banner {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.alert-text h3 {
+  font-size: 18px;
+  color: #0f172a;
+  margin: 0 0 6px 0;
+  font-weight: 700;
+}
+
+.alert-text p {
+  margin: 0;
+  color: #64748b;
+  font-size: 15px;
+}
+
+.btn-emergency-main {
+  background-color: #16a34a;
+  color: #ffffff;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-emergency-main:hover {
+  background-color: #15803d;
+}
+
+
+.emergency-list {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.emergency-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 32px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.emergency-row:last-child {
+  border-bottom: none;
+}
+
+.service-identity {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1.5;
+}
+
+.icon-red {
+  color: #dc2626;
+  font-size: 22px;
+}
+
+.service-name {
+  font-weight: 600;
+  color: #1e293b;
+  font-size: 16px;
+}
+
+.phone-number {
+  color: #475569;
+  font-size: 15px;
+  flex: 1;
+  text-align: left;
+}
+
+.btn-call{
+  background-color: #16a34a;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-call:hover {
+  background-color: #15803d;
+}
+
+.left {
+background-color: #16a34a;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s ease;
+}
+.left:hover {
+  background-color: #15803d;
+  color: white;
+}
+
+.other-services-grid {
+  display: flex;
+  gap: 24px;
+}
+
+.service-mini-card {
+  flex: 1;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.mini-card-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px auto;
+  font-size: 20px;
+}
+
+.badge-blue { background-color: #eff6ff; color: #2563eb; }
+.badge-orange { background-color: #fff7ed; color: #ea580c; }
+.badge-green { background-color: #f0fdf4; color: #16a34a; }
+
+.service-mini-card h3 {
+  font-size: 16px;
+  color: #334155;
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}
+
+.hotline-num {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.about-details-section {
+  padding: 60px 20px;
+  background-color: #ffffff;
+}
+
+.about-text-container {
+  max-width: 850px; 
+  margin: 0 auto;
+}
+
+.about-block {
+  margin-bottom: 45px;      
+}
+
+.about-block:last-child {
+  margin-bottom: 0;
+}
+
+.about-block p {
+  font-size: 18px;       
+  line-height: 1.85;     
+  color: #052e16;
+  margin: 0;
+}
+
+.about-block h2 {
+  font-size: 26px;       
+  color: #052e16;
+  font-weight: 800;
+  margin-top: 30px;      
+  margin-bottom: 14px; 
+}
+
+.intro-block p {
+  font-size: 18px;
+  line-height: 1.85;
+  color: #052e16;
+  margin-bottom: 25px;
+}
 
 /* =========================================================
    COPYRIGHT SECTION
