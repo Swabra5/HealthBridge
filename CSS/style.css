@@ -678,6 +678,10 @@ footer img {
   padding-top:20px;
 }
 
+.menu-checkbox, .hamburger {
+  display: none
+}
+
 
 /* =========================================================
    RESPONSIVE DESIGN
@@ -686,31 +690,63 @@ footer img {
   header {
     height: auto;
     padding: 15px 0;
+    position: relative;
+    z-index: 9999;
   }
 
   .nav-container {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    gap: 15px;
-  }
+    position: relative;
+    padding: 10px 5%;
+    }
 
   .logo {
     margin-bottom: 5px;
   }
 
   nav ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     gap: 15px;
     padding: 0;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    margin:0;
   }
 
   nav ul li a {
     color: #052e16; 
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
+    width: 100%;
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+    border-bottom: 1px solid #f0f0f0;
+    text-align: center;
+
+  }
+  nav ul li {
+    width: 100%;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+  }
+
+  .hero {
+    margin-top: 0;
   }
 
   .search-box {
@@ -771,5 +807,21 @@ footer img {
 
   .social-icons {
     justify-content: center;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+    color: #052e16;
+    order: 2;
+  }
+
+  .menu-checkbox:checked ~ nav {
+    display: block;
+  }
+
+  .menu-checkbox {
+    display: none;
   }
 }
